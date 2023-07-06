@@ -7,48 +7,53 @@
     <title>Traffic Control; Indore</title>
     <link rel="stylesheet" href="/dist/style.css">
     <script src="/app/js/main.js" defer></script>
+    <script src="/app/js/Gallery.js" defer></script>
 
+    <link rel="shortcut icon" href="/resourses/icon.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 </head>
 <body>
     <nav>
-        <!-- NAV can neceassry links and the logo in the center -->
-        <div class="logo"> Traffic Control; Indore</div>
+        <h1 class="logo">TCI</h1>
+        <div class="links-wrapper">
+            <a href="/index.html" class="links" data-status="">Home</a>
+            <a href="" class="links" data-status="">Bingo</a>
+            <a href="" class="links" data-status="">Contact</a>
+        </div>         
     </nav>
 
-    <main id="main">
-        <div class="gallery">
-            <div class="gallery__Children" id="GalleryRoll">
-                <article id="posters">
-                    <img src="/resourses/posters/march23.webp" alt="" class="poster">
-                    <div class="poster__description">
-                        <h2 data-source="savee.io"> Savee</h2>
-                        <p>cool poster found on savee</p>
-                    </div>
-                </article>
-            </div>
-            <div class="gallery__Children"> Learn More! </div>  <!-- z-index: 2 -->
-            <div class="gallery__Children" id="GalleryRoll"></div>
-            <div class="gallery__Children"></div>
+    <section class="hero-section">
+        <div class="text font-short_stack">
+            <div class="h1 font-bungee">Traveller's Bingo</div>
+            <p class="subtext">Traveller's BINGOs are a set of 5 cards each containing maximum of 9 places in/near indore which are must visit place when visiting Indore</p>
+            <button id="bingo">See all Cards</button>
         </div>
-        <!-- main have hero section which can have events scheulde etc. -->
+        <img src="" alt="">
+    </section>
 
-        <div class="trailer"><!-- z-index: 10 -->
-            <img src="/resourses/Register now circle.svg" id="HookImage" data-status="active"><!-- z-index: 11 -->
-            <img src="/resourses/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg" id="NonRotatable" data-status="active" data-arrow="left"><!-- z-index: 11 -->
-            <img src="/resourses/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg" id="NonRotatable" data-status="inactive" data-arrow="right"><!-- z-index: 11 -->
+    <section class="row" data-row="1">
+        <h1>Our Mission</h1>
+        <p class="text">Our mission is to create a collaborative environment where residents, commuters, and visitors can come together to share valuable information, resources, and strategies for smoother and safer transportation.</p>
+    </section>
+
+    <section class="row" data-row="2">
+        <h1>Our Request</h1>
+        <p class="text">We invite everyone in the city to join our community and be a part of the movement towards smoother and safer transportation. Together, we can navigate our city more efficiently, increase awareness about traffic problems, and work towards creating a more sustainable and liveable urban environment.</p>
+    </section>
+
+    <section class="row" data-row="3">
+        <h1>All Resource</h1>
+        <p class="text">You can find  education videos, illustrations etc. showing the importance of traffic control and about awareness about trafficc congestion.</p>
+    </section>
+
+    <section class="Contact">
+        <div class="Social-media">
+            <a href=""></a>
+            <a href="https://www.reddit.com/r/TrafficControlIndore/"><img src="https://www.iconpacks.net/icons/2/free-reddit-logo-icon-2436-thumb.png" alt=""></a>
+            <a href=""></a>
         </div>
-    </main>
-
-    <div class="ContactUs">
-        <!-- Contacts and social media links  -->
-        <div class="buttons">
-            <h3>CONTACT US</h3>
-            <h3>Interested Yet</h3>
-        </div>
-    </div>
-
-    
+    </section>
 </body>
 </html>
