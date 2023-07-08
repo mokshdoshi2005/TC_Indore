@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+nav {
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: rgba(74, 57, 34, 0.7176470588);
+}
+
+.logo {
+  margin-block: 0;
+  font-family: "Bungee", cursive;
+  color: var(--white);
+}
+
+.links-wrapper {
+  width: min(40%, 40ch);
+  display: flex;
+  justify-content: space-around;
+  gap: 1ch;
+}
+
+.links {
+  font-family: "Short Stack", cursive;
+  text-align: center;
+  align-self: center;
+  text-decoration: underline;
+  outline: none;
+  color: var(--white);
+}
+
+section.hero-section {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-row: auto;
+  padding-inline: 1rem;
+}
+@media (max-width: 450px) {
+  section.hero-section {
+    grid-template-columns: 1fr;
+    padding-inline: 1vw;
+    padding-block: 5vh;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+section.hero-section > .text {
+  align-self: center;
+}
+section.hero-section > .text > .h1 {
+  font-size: clamp(24px, 2vw, 64px);
+  line-height: clamp(24px, 2vw, 64px);
+  margin: 0;
+  align-self: baseline;
+}
+@media (min-width: 520px) {
+  section.hero-section > .text > .h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+section.hero-section > .text button {
+  background-color: var(--base-red);
+  outline: none;
+  border: none;
+  padding: 0.2ch 0.3ch;
+  font-family: "Short Stack", cursive;
+  font-size: medium;
+  color: var(--white);
+  font-size: clamp(8px, 0.25vw, 16px);
+}
+@media (min-width: 520px) {
+  section.hero-section > .text button {
+    font-size: 16px;
+    padding: 2ch 3ch;
+  }
+}
+
+.row {
+  padding-block: 5ch;
+}
+.row h1 {
+  padding-inline: 1rem;
+  font-family: "Bungee", cursive;
+  margin: 0;
+}
+.row .text {
+  margin-top: -0.5ch;
+  padding-inline: 1rem;
+  font-family: "Short Stack", cursive;
+}
+
+.row[data-row="1"] {
+  background-color: var(--base-red);
+}
+
+.row[data-row="2"] {
+  background-color: var(--white);
+  opacity: 0.75;
+}
+
+.row[data-row="3"] {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.Contact {
+  background-color: var(--contactus-grey);
+  height: min(70vw, 50ch);
+}
+.Contact .Social-media {
+  width: 100%;
+  justify-content: space-around;
+  height: 50%;
+  display: flex;
+  padding: 2ch 5ch;
+}
+.Contact .Social-media a {
+  max-width: 100px;
+  max-height: 100px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 2px solid var(--white);
+  display: grid;
+  place-content: center;
+}
+.Contact .Social-media a img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --contactus: ;
+  --base-burlywood: #deb887;
+  --base-red: #9e1515;
+  --black: #191919;
+  --white: #e6e6e6;
+  --contactus-grey: #5e5d5d;
+}
+
+.font-bungee {
+  font-family: "Bungee", cursive;
+}
+
+.font-bungee_shade {
+  font-family: "Bungee Shade", cursive;
+}
+
+.font-short_stack {
+  font-family: "Short Stack", cursive;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--base-burlywood);
+  font-size: clamp(8px, 2vw, 16px);
+}
+@media (min-width: 520px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+#body_bingo {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#gallery {
+  display: grid;
+  grid-auto-flow: column;
+  max-width: 100vw;
+  gap: 1ch;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+#Bingo-cards {
+  padding: 2ch;
+  background-color: var(--base-red);
+  scroll-snap-align: start;
+}
+
+#Bingo-cards > img {
+  border-radius: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 780px) {
+  #Bingo-cards > img {
+    height: calc(100vh - 8ch);
+    width: calc(100vw - 4ch);
+  }
+}/*# sourceMappingURL=style.css.map */
